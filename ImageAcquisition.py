@@ -104,8 +104,9 @@ while True:
             print("Breaking Loop")
             break
         cv2.imshow('frame',frame)
-        if(cv2.waitKey(20) & 0xFF == ord('q')):
-            continue    
+        c = cv2.waitKey(0)
+        if(ord('q')==c):
+            print("Next!")    
     
            
     if cv2.waitKey(20) & 0xFF == ord('q'):
